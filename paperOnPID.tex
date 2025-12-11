@@ -1,6 +1,6 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[a4paper,12pt]{ctexart}
+%\usepackage[utf8]{inputenc} % ctexart 已经处理了编码，通常不需要这两个包
+%\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{geometry}
@@ -10,13 +10,17 @@
 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
-\title{基于运算放大器的模拟PID控制器设计与分析}
-\author{你的名字 \\ 模拟电路课程设计}
+\title{基于分立晶体管(BJT)的模拟PID控制器设计与分析}
+\author{孙智诚 \\ 模拟电路课程设计}
 \date{\today}
 
 \begin{document}
 
 \maketitle
+
+\begin{abstract}
+本文旨在设计一种基于分立双极性结型晶体管（BJT）的模拟PID控制器。不同于常见的运算放大器方案，本设计从底层出发，利用差分放大电路实现误差检测，利用共射极放大电路及其变体构建比例、积分和微分环节。文章详细分析了各级电路的静态工作点（Q点）设置与动态参数计算，并通过仿真验证了该分立元件电路在控制系统中的有效性。该设计有助于深入理解模拟电路中晶体管的放大与运算功能。
+\end{abstract}
 
 
 \section{引言 (Introduction)}
@@ -31,21 +35,40 @@ PID控制器的输出 $u(t)$ 与输入误差 $e(t)$ 的关系为：
 其中，$K_p$ 为比例系数，$K_i$ 为积分系数，$K_d$ 为微分系数。
 
 \section{模拟电路设计 (Circuit Design)}
-本设计主要由四个模块组成：误差检测、比例环节、积分环节、微分环节以及加法器环节。
+本设计完全采用分立BJT元件构建。主要包含误差检测（差分放大）、PID运算单元（共射/共基电路）及信号合成（加法器）模块。
+
+\subsection{误差检测级 (Error Detector)}
+采用长尾对（Long-tailed Pair）差分放大电路。
+\begin{itemize}
+    \item \textbf{电路结构}：两个匹配的NPN管（如2N3904），发射极共用一个恒流源（或大电阻）接地。
+    \item \textbf{功能}：输入端分别接设定值($V_{set}$)和反馈值($V_{fb}$)，输出差模电压 $V_{err} \propto (V_{set} - V_{fb})$。
+\end{itemize}
 
 \subsection{比例环节 (Proportional Stage)}
-使用反相放大器实现。增益 $A_p = -\frac{R_f}{R_{in}}$。
-% 可以在这里插入 circuitikz 代码画图
+采用带发射极负反馈电阻的共射放大电路。
+\begin{itemize}
+    \item \textbf{原理}：电压增益 $A_v \approx -\frac{R_C}{R_E}$。
+    \item \textbf{调节}：通过改变 $R_E$ 或 $R_C$ 来调节比例系数 $K_p$。
+\end{itemize}
 
 \subsection{积分环节 (Integral Stage)}
-使用米勒积分器电路实现。输出电压 $v_o = -\frac{1}{RC} \int v_{in} dt$。
+采用改进型的米勒积分器（Miller Integrator）。
+\begin{itemize}
+    \item \textbf{电路结构}：在共射放大电路的集电极与基极之间跨接电容 $C$。
+    \item \textbf{原理}：利用米勒效应，将电容等效到输入端，形成积分特性。
+\end{itemize}
 
 \subsection{微分环节 (Derivative Stage)}
-使用微分器电路实现。输出电压 $v_o = -RC \frac{dv_{in}}{dt}$。
-\textit{注意：实际设计中通常需串联小电阻以抑制高频噪声。}
+采用RC高通网络配合射极跟随器。
+\begin{itemize}
+    \item \textbf{电路结构}：输入信号先经过 $C-R$ 微分网络，再进入高输入阻抗的射极跟随器（Common Collector）进行缓冲，防止负载效应。
+\end{itemize}
 
-\subsection{加法与反相环节 (Summing and Inverting Stage)}
-将P、I、D三路的输出通过反相加法器汇总。由于前级均为反相，此处加法器可再次反相以恢复正极性（取决于系统需求）。
+\subsection{加法环节 (Summing Stage)}
+采用电阻加法网络接入共射放大器基极。
+\begin{itemize}
+    \item \textbf{原理}：将P、I、D三路的输出通过电阻汇聚到加法级晶体管的基极，利用基极电流的叠加实现信号相加。
+\end{itemize}
 
 \section{参数计算与仿真 (Simulation and Results)}
 \subsection{参数选择}
