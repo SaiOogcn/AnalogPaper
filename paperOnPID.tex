@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{circuitikz} % 用于绘制电路图
+\usepackage{float}
+\usepackage{hyperref}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+\title{基于运算放大器的模拟PID控制器设计与分析}
+\author{你的名字 \\ 模拟电路课程设计}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\section{引言 (Introduction)}
+简述控制系统的重要性，PID控制在工业中的广泛应用，以及使用模拟电路实现PID控制器的意义（如：响应速度快、成本低、无需编程等）。
+
+\section{PID控制理论基础 (Theoretical Background)}
+\subsection{PID控制原理}
+PID控制器的输出 $u(t)$ 与输入误差 $e(t)$ 的关系为：
+\begin{equation}
+    u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t)}{dt}
+\end{equation}
+其中，$K_p$ 为比例系数，$K_i$ 为积分系数，$K_d$ 为微分系数。
+
+\section{模拟电路设计 (Circuit Design)}
+本设计主要由四个模块组成：误差检测、比例环节、积分环节、微分环节以及加法器环节。
+
+\subsection{比例环节 (Proportional Stage)}
+使用反相放大器实现。增益 $A_p = -\frac{R_f}{R_{in}}$。
+% 可以在这里插入 circuitikz 代码画图
+
+\subsection{积分环节 (Integral Stage)}
+使用米勒积分器电路实现。输出电压 $v_o = -\frac{1}{RC} \int v_{in} dt$。
+
+\subsection{微分环节 (Derivative Stage)}
+使用微分器电路实现。输出电压 $v_o = -RC \frac{dv_{in}}{dt}$。
+\textit{注意：实际设计中通常需串联小电阻以抑制高频噪声。}
+
+\subsection{加法与反相环节 (Summing and Inverting Stage)}
+将P、I、D三路的输出通过反相加法器汇总。由于前级均为反相，此处加法器可再次反相以恢复正极性（取决于系统需求）。
+
+\section{参数计算与仿真 (Simulation and Results)}
+\subsection{参数选择}
+列出选用的电阻、电容值，以及对应的 $K_p, K_i, K_d$ 计算值。
+
+\subsection{仿真波形}
+展示输入阶跃信号时，P、I、D各环节的输出波形，以及总输出波形。
+
+\section{结论 (Conclusion)}
+总结设计的优缺点，以及未来改进方向。
+
+\begin{thebibliography}{99}
+\bibitem{ref1} 模拟电子技术基础教材.
+\bibitem{ref2} 相关电路设计手册.
+\end{thebibliography}
+
+\end{document}
