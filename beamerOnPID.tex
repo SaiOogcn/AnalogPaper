@@ -1,0 +1,112 @@
+\documentclass[10pt]{ctexbeamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{Analog PID Controller Design with Op-Amps}
+\subtitle{From control intuition to circuit blocks}
+\author{Zhicheng Sun}
+\institute{Analog Circuits Course Project}
+\date{\today}
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Motivation (Why analog PID?) }
+	\begin{itemize}
+		\item I usually implement PID in software; this project tries to \textbf{build it in analog circuitry}.
+		\item Goal: a simple structure that is \textbf{fast, low-cost, and requires no programming}.
+		\item Most importantly, it helps me understand what \textbf{integrators and differentiators} mean in real circuits.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{PID in one equation}
+	\small
+	\begin{block}{Error definition}
+		\vspace{2pt}
+		\begin{equation*}
+			e(t) = r(t) - y(t)
+		\end{equation*}
+	\end{block}
+	\begin{block}{Control law}
+		\vspace{-2pt}
+		\begin{equation*}
+			u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau)\, d\tau + K_d \frac{de(t)}{dt}
+		\end{equation*}
+	\end{block}
+	\vspace{2pt}
+	Intuition: do not only look at the current error; combine \textbf{present}, \textbf{accumulated}, and \textbf{trend} information.
+\end{frame}
+
+\begin{frame}{What P / I / D actually do}
+	\begin{itemize}
+		\item \textbf{P (Proportional):} stronger error \(\Rightarrow\) stronger correction.
+			\begin{itemize}
+				\item Too small: slow response and noticeable steady-state error.
+				\item Too large: overshoot or even oscillation.
+			\end{itemize}
+		\item \textbf{I (Integral):} accumulates error to remove steady-state error.
+			\begin{itemize}
+				\item Risk: integral windup when the actuator saturates.
+			\end{itemize}
+		\item \textbf{D (Derivative):} uses the error trend to reduce overshoot.
+			\begin{itemize}
+				\item Risk: sensitive to high-frequency noise \(\Rightarrow\) use band-limited differentiation.
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Analog implementation: block view}
+	\begin{enumerate}
+		\item \textbf{Error detector:} a differential amplifier computes \(e(t)=r(t)-y(t)\).
+		\item \textbf{Three parallel paths:}
+			\begin{itemize}
+				\item P path: inverting amplifier (gain set by resistor ratio)
+				\item I path: op-amp integrator (RC time constant)
+				\item D path: band-limited differentiator (practical noise control)
+			\end{itemize}
+		\item \textbf{Summing \& shaping:} inverting summer + output limiting to reduce windup.
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Mapping parameters to components}
+	\small
+	\begin{block}{Proportional path}
+		\vspace{-2pt}
+		\begin{equation*}
+			G_P(s) = -\frac{R_f}{R_{in}} \quad \Rightarrow \quad K_p \approx \frac{R_f}{R_{in}}
+		\end{equation*}
+	\end{block}
+	\begin{block}{Integral path}
+		\vspace{-2pt}
+		\begin{equation*}
+			G_I(s) = -\frac{1}{RCs} \quad \Rightarrow \quad K_i \approx \frac{1}{RC}
+		\end{equation*}
+	\end{block}
+	\begin{block}{Practical notes}
+		\begin{itemize}
+			\item Add a large resistor in parallel with the integrator capacitor to reduce DC drift.
+			\item Add limit/clamp at the output to mitigate integral windup.
+			\item Use a band-limited differentiator to avoid noise amplification.
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Simulation plan \& conclusion}
+	\begin{block}{What to check in simulation}
+		\begin{itemize}
+			\item Step response: overshoot, settling time, and steady-state error.
+			\item Internal signals: outputs of P / I / D branches and the summed output.
+			\item Saturation behavior: does integral windup appear and how do clamps help?
+		\end{itemize}
+	\end{block}
+	\begin{block}{Takeaway}
+		Analog PID is feasible and intuitive: gains map directly to resistor ratios and RC time constants.
+		The key engineering issues are \textbf{noise} (especially D) and \textbf{saturation} (especially I).
+	\end{block}
+\end{frame}
+\end{document}

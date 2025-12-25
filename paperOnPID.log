@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.12.11)  11 DEC 2025 19:19
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.12.11)  25 DEC 2025 19:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -936,24 +936,26 @@ Package hyperref Info: Link coloring OFF on input line 17.
 
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
-80.
+81.
 [2]
 
-[3] (paperOnPID.aux)
+[3]
+
+[4] (paperOnPID.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `paperOnPID.out' has not changed.
-(rerunfilecheck)             Checksum: C2F5BA64C293ED1A74830E2EBCD6ED64;2195.
+(rerunfilecheck)             Checksum: B2AC1646AC69DBCA525CBA056F92F229;2422.
  ) 
 Here is how much of TeX's memory you used:
- 44017 strings out of 408789
- 1102154 string characters out of 5754877
- 1760931 words of memory out of 5000000
- 66487 multiletter control sequences out of 15000+600000
- 565101 words of font info for 88 fonts, out of 8000000 for 9000
+ 44034 strings out of 408789
+ 1103266 string characters out of 5754877
+ 1763174 words of memory out of 5000000
+ 66505 multiletter control sequences out of 15000+600000
+ 565093 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,6n,111p,442b,395s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,6n,111p,442b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paperOnPID.pdf (3 pages).
+Output written on paperOnPID.pdf (4 pages).
