@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.12.11)  25 DEC 2025 23:42
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2025.12.11)  26 DEC 2025 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -809,29 +809,132 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip63
-) (paperOnPID.aux)
+)
+(F:\CTeX\MiKTeX\tex/latex/pgfplots\pgfplots.sty
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks38
+\t@pgfplots@tokb=\toks39
+\t@pgfplots@tokc=\toks40
+\pgfplots@tmpa=\dimen327
+\c@pgfplots@coordindex=\count353
+\c@pgfplots@scanlineindex=\count354
+
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.c
+ode.tex
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-
+common-lists.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.t
+ex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.cod
+e.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count355
+)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count356
+\t@pgfplotstable@a=\toks44
+)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.t
+ex
+\c@pgfplotslibrarysurf@no=\count357
+
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-
+xetex.def
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-
+dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count358
+))))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex)))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex)
+(F:\CTeX\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen328
+\pgfdecoratedremainingdistance=\dimen329
+\pgfdecoratedinputsegmentcompleteddistance=\dimen330
+\pgfdecoratedinputsegmentremainingdistance=\dimen331
+\pgf@decorate@distancetomove=\dimen332
+\pgf@decorate@repeatstate=\count359
+\pgfdecorationsegmentamplitude=\dimen333
+\pgfdecorationsegmentlength=\dimen334
+)
+\tikz@lib@dec@box=\box73
+)
+(F:\CTeX\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.pathmorphing.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pat
+hmorphing.code.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.pathreplacing.code.tex
+(F:\CTeX\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pat
+hreplacing.code.tex))
+(F:\CTeX\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.t
+ex)
+\pgfplots@numplots=\count360
+\pgfplots@xmin@reg=\dimen335
+\pgfplots@xmax@reg=\dimen336
+\pgfplots@ymin@reg=\dimen337
+\pgfplots@ymax@reg=\dimen338
+\pgfplots@zmin@reg=\dimen339
+\pgfplots@zmax@reg=\dimen340
+)
+(F:\CTeX\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmar
+ks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(F:\CTeX\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(paperOnPID.aux)
 \openout1 = `paperOnPID.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 Package fontspec Info: 
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
@@ -839,56 +942,57 @@ Package fontspec Info:
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 17.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 17.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 17.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 17.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 17.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 17.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 17.
-LaTeX Font Info:    Redeclaring math accent \check on input line 17.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 17.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 17.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 17.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 17.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 17.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 19.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 19.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 19.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 19.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 19.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 19.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 19.
+LaTeX Font Info:    Redeclaring math accent \check on input line 19.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 19.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 19.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 19.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 19.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 19.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 17.
+(Font)              `operators' in the math version `normal' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 17.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 19.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 17.
+(Font)              `operators' in the math version `bold' on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 17.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 17.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 17.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 17.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 19.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 17.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 17.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 17.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 17.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 19.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -923,10 +1027,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 19.
 (paperOnPID.out) (paperOnPID.out)
 \@outlinefile=\write4
 \openout4 = `paperOnPID.out'.
+
+
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.18} (current compat level: 1.17).
 
 
 
@@ -936,7 +1044,7 @@ Package hyperref Info: Link coloring OFF on input line 17.
 
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 
-109.
+111.
 [2]
 
 [3]
@@ -945,21 +1053,37 @@ LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <12> not available
 
 [5]
 
-[6] (paperOnPID.aux)
+[6]
+
+[7]
+
+[8]
+
+[9]
+File: design.png Graphic file (type bmp)
+<design.png>
+
+
+[10]
+File: PIDresult.png Graphic file (type bmp)
+<PIDresult.png>
+
+
+[11] (paperOnPID.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `paperOnPID.out' has not changed.
-(rerunfilecheck)             Checksum: DD27F273265AF3AE8F111FA29C3EB52B;2083.
+(rerunfilecheck)             Checksum: 98A901CE5650F80193BBAE28F1C03EBE;2237.
  ) 
 Here is how much of TeX's memory you used:
- 44855 strings out of 408789
- 1126108 string characters out of 5754877
- 1792227 words of memory out of 5000000
- 67310 multiletter control sequences out of 15000+600000
- 568117 words of font info for 102 fonts, out of 8000000 for 9000
+ 55305 strings out of 408789
+ 1479265 string characters out of 5754877
+ 2260369 words of memory out of 5000000
+ 77629 multiletter control sequences out of 15000+600000
+ 569265 words of font info for 107 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,11n,111p,442b,939s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,17n,111p,733b,2249s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paperOnPID.pdf (6 pages).
+Output written on paperOnPID.pdf (11 pages).
